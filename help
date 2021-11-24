@@ -1,0 +1,19 @@
+* Floating Point Numbers:
+    - significant digit (number of digit in a number)
+    - std:fixed to print all significant
+    - float = 6 trust digit  = FLT_DIG ;
+    - double = 15 trust digit = DBL_DIG ;
+    - long double = 18 ***** = LDBL_DIG ; more presision
+
+* fraction :  Numerator / denominator
+    - Numerator 
+    - denominator
+
+* Fixed-point arithmetic :
+    - A form of limited-precision arithmetic in computing.
+    -  26.5 | coefficient 6 has a weight of 10'2 = 1
+    - Binary 2'0 = % rest is the Binary
+
+    - binary point 0.X
+    - Two's complement : 
+        ( For negative Numbers ) a mathematical operation on binary numbers
