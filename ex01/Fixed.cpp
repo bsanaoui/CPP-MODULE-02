@@ -23,7 +23,7 @@ Fixed::Fixed(float const raw)
 
 Fixed::~Fixed()
 {
-    std::cout << "Default Destructor called" << std::endl;
+    std::cout << "Destructor called" << std::endl;
 }
 
 Fixed::Fixed(const Fixed &fixed)
@@ -56,17 +56,16 @@ void    Fixed::setRawBits( int const raw)
     this->_fixedPoint = raw;
 }
 
-
 // ------------------- Members Public functions ------------------------- //
 
 float   Fixed::toFloat( void ) const
 {
-    return ((float)this->_fixedPoint / (float)(1 << 8));
+    return ((float)this->_fixedPoint / (float)(1 << _nBitFractional));
 }
 
 int     Fixed::toInt( void ) const
 {
-    return (this->_fixedPoint / (1 << 8));
+    return (this->_fixedPoint / (1 << _nBitFractional));
 }
 
 // ---------------- Overloading << operation -------------------  //

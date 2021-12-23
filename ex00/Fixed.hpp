@@ -20,7 +20,7 @@ class Fixed
     Fixed(Fixed const &fixed);
 
     // -------------- Assignation Operator Overload ----------- //
-    void    operator = (Fixed &fixed);
+    void    operator = (Fixed const &fixed);
 
     // ----------------- Getters & Setters --------------------- //
     int     getRawBits( void ) const ;

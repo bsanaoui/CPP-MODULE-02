@@ -12,17 +12,17 @@ Fixed::Fixed()
 
 Fixed::~Fixed()
 {
-    std::cout << "Default Destructor called" << std::endl;
+    std::cout << "Destructor called" << std::endl;
 }
 
 Fixed::Fixed(Fixed const &fixed)
 {
     std::cout << "Copy constructor called" << std::endl;
-    this->_fixedPoint = fixed.getRawBits();
+    *this = fixed;
 }
 
     // -------------- Assignation Operator Overload ----------- //
-void    Fixed::operator = (Fixed &fixed)
+void    Fixed::operator = (Fixed const &fixed)
 {
     std::cout << "Assignation operator called" << std::endl;
     this->_fixedPoint = fixed.getRawBits();
